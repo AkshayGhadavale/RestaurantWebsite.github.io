@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap');
+@media only screen and (min-width:360px) and (max-width:640px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap');
     *{
         margin: 0;
         padding: 0;
         list-style: none;
         font-size: 20px;
-
+      
     }
     :root {
         --second-color: #E4EDC2;
@@ -28,7 +30,7 @@
         background-image:url(/images/wave.svg);
         background-position: center;
         background-size: cover;
-        height: 284px;
+        height: 100px;
         width: 100%;
         background-color:var(--second-color);
     }
@@ -37,9 +39,11 @@
         height: 20%;
       display: flex;
       z-index: 1;
+  
 
     }
     .navleft
+
     {
         width:40%;
         height: 100%;
@@ -48,6 +52,10 @@
     align-items: center;
     
     }
+    .navleft img{
+        width: 90%;
+        height: 60%;
+    }
        .navright
     {
         width:60%;
@@ -55,6 +63,7 @@
         display: inline-grid;
     justify-content: center;
     align-content: center;
+    display: none;
     
     }
     .navright ul{
@@ -92,7 +101,8 @@
     }
     .middle-page .header
     {  background-color:transparent;
-        width: 40%;
+        width: 100%;
+        
       text-align: center;
       color: white;
       text-align: center;
@@ -100,11 +110,12 @@
       font-family: var(--common-font);
       display: flex;
       flex-direction: column;
+      justify-content: center;
        
       
     }
     .middle-page .header h1{
-        font-size:4.5pc;
+        font-size:2rem;
         font-weight: bolder;
         font-family: var(--common-font);
       padding: 20px;
@@ -114,7 +125,7 @@
        
         background-color: aqua;
         width: 100%;
-        height: 710px;
+        height: 1510px;
         display: flex;
         flex-direction: column;
         
@@ -127,11 +138,11 @@
         
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
     .popheader h1{
-        font-size:2.5pc;
+        font-size:2rem;
         font-weight: bolder;
         font-family:var(--common-font);
       color: var(--main-color);
@@ -139,18 +150,20 @@
     }
     .popcardsection{
         width: 100%;
-        height: 50%;
+        height: 80%;
     display: flex;
-        flex-direction: row;
-       justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
     }
     .popcardsection .card {
-        width: 300px;
-        height: 400px;
+        width: 250px;
+        height: 350px;
         border-radius: 10px;
         background-color:white;
+        margin-bottom: 30px;
         box-shadow: 10px 10px 70px 3px black;
+
        
     }
     .popcardsection .card:hover{
@@ -168,6 +181,7 @@
     }
     .popcardsection .card .cardtextsec p{
         margin-top: 10px;
+        font-size:0.8rem;
         margin-bottom: 10px;
     }
     .popcardsection .card img{
@@ -206,23 +220,23 @@
   
     .spcialsection{
         width: 100%;
-        height: 1065px;
+        height: 1200px;
 display: flex;
 flex-direction: column;
     }
     .firstspsction{width: 100%;
         height: 50%;
         display: flex;
-flex-direction: row;
+flex-direction: column;
 
     }
     .secondspsction{width: 100%;
         height: 50%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
     }
     .firstspsction .imgsec{
-        width: 50%;
+        width: 100%;
         height: 100%;
         background-image: url(/images/pinkdish.png);
     background-size:cover;
@@ -240,7 +254,7 @@ flex-direction: row;
         
     }
     .secondspsction .imgsec{
-        width: 50%;
+        width: 100%;
         height: 100%;
         background-image: url(/images/orangedish.png);
     background-size:cover;
@@ -260,7 +274,7 @@ flex-direction: row;
         
     }
     .spcialsection h1{
-        font-size:3pc;
+        font-size:2rem;
         font-weight: bolder;
         font-family:var(--common-font);
       color: black;
@@ -268,7 +282,7 @@ flex-direction: row;
       padding-left:20px;
     }
     .spcialsection p{
-       width: 400px;
+       width: 250px;
         font-weight: bolder;
         font-family:var(--common-font);
         color: black;
@@ -279,12 +293,13 @@ flex-direction: row;
     .spcialsection button
 {
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 
 .stepsection{
     width: 100%;
-    height: 497px;
+    height: 867px;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -293,7 +308,7 @@ flex-direction: row;
 }
 .stepsection .header{
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,20 +322,23 @@ flex-direction: row;
 }
 .stepsection .cardsection{
     width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    
-}
-.stepsection .cardsection .card{
-
-    width: 400px;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-   
+    
+    
+}
+.stepsection .cardsection .card{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .stepsection .cardsection .card .number{
     width: 80px;
@@ -330,7 +348,7 @@ flex-direction: row;
     display: flex;
     background-color: white;
 
-
+ 
     justify-content: center;
     align-items: center;
 }
@@ -349,7 +367,7 @@ flex-direction: row;
     font-weight: bolder;
     font-family:var(--common-font);
  color: white;
- width: 250px;
+ width: 100%;
  text-align: center;
 }
 
@@ -372,19 +390,21 @@ flex-direction: row;
     font-size: 3.8pc;
     color: var(--main-color);
     margin-bottom: 20px;
+    text-align: center;
 }
 .vegtablesection p{
     font-weight: bolder;
     font-family:var(--common-font);
     font-size: 1pc;
     color: var(--main-color);
-    width: 600px;text-align: center;
+    width: 300px;
+    text-align: center;
     margin-bottom: 60px;
 }
 
 .vegtablesection .textsection{
     width: 100%;
-    height: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -406,14 +426,16 @@ flex-direction: row;
     justify-content:center ;
     align-items: center;
     flex-direction: column;
+
 }
 .lastsection .textsection{
-    width:60%;
-    height: 60%;
+    width:100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
   
 }
 .lastsection .textsection h1{
@@ -422,30 +444,31 @@ height: 130px;
 color: var(--main-color);
 }
 .lastsection .textsection  p{
-    font-size:1.8pc;
+    font-size:1.4rem;
     font-weight: bolder;
     text-align: center;
     font-family:var(--common-font);
     color: var(--main-color);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .lastsection .textsection  h2{
-    font-size:1.8pc;
+    font-size:1rem;
     font-weight: bolder;
     text-align: center;
     font-family:var(--common-font);
     color: var(--main-color);
 }
 .lastsection img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
  
     
 }
 .socialmedia{
+
     margin-top: 40px;
- 
-    width: 30%;
+
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
@@ -453,8 +476,9 @@ color: var(--main-color);
 background-image:url(/images/waveup.svg);
         background-position: center;
         background-size: cover;
-        height: 40%;
+        height: 20%;
         width: 100%;
+     
 }
 .footer{
     width: 100%;
@@ -468,35 +492,34 @@ background-image:url(/images/waveup.svg);
 .footersection{
     width: 80% ;
     
-    height: 80%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .aboutsec{
-    width: 50%;
-    height: 60%;
+    width: 100%;
+    height: 50%;
    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    text-align: left;
+   
 }
 .aboutsec p{
     font-family: var(--common-font);
     color: white;
-    margin-left: 20px;
 }
 .aboutsec h1{
     font-family: var(--common-font);
     color: white;
-    margin-left: 30px;
+   
 }
 .menusec{
-    width: 50%;
-    height: 60%;
+    width: 100%;
+    height: 50%;
    
     display: flex;
     flex-direction: row;
@@ -510,7 +533,7 @@ background-image:url(/images/waveup.svg);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
    
    
 }
@@ -527,4 +550,9 @@ background-image:url(/images/waveup.svg);
     font-family: var(--common-font);
     color: white;
   
+}
+
+
+
+    
 }
