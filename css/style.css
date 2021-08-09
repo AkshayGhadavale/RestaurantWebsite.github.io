@@ -169,6 +169,7 @@
     .popcardsection .card .cardtextsec p{
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size: 1.1rem;
     }
     .popcardsection .card img{
         width: 100%;
@@ -181,7 +182,7 @@
         font-family: var(--common-font);
         margin-top: 10px;
         padding-left: 10px;
-
+        font-size: 1.1rem;
     }
     .pricecolor{
         color: brown;
