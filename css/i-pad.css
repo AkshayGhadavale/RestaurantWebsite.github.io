@@ -1,0 +1,559 @@
+@media only screen and (min-width: 640px) and (max-width: 1268px) {
+    
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 20px;
+        
+
+        }
+        :root {
+            --second-color: #E4EDC2;
+            --common-font:'Ubuntu', sans-serif;;
+            --main-color: #7287AE;
+        }
+        .menubtn{
+            display: none;
+        }
+        
+    
+        .wrapper{
+            width: 100%;
+            height: 426px;
+            background-color: var(--main-color);
+            display: flex;;
+            flex-direction: column;
+           
+    
+        }
+        .waveshape
+        {
+            background-image:url(/images/wave.svg);
+            background-position: center;
+            background-size: cover;
+            height: 284px;
+            width: 100%;
+            background-color:var(--second-color);
+        }
+        .navbar{
+            width: 100%;
+            height: 20%;
+          display: flex;
+          z-index: 1;
+    
+        }
+        .navleft
+        {
+            width:40%;
+            height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+        .navleft img{
+            width: 80%;
+            height: 60%;
+        }
+           .navright
+        {
+            width:60%;
+            height: 100%;
+            display: inline-grid;
+        justify-content: center;
+        align-content: center;
+        
+        }
+        .navright ul{
+            display: flex;
+          
+           
+        }
+        .navright ul  a{
+            text-decoration: none;
+            color: aliceblue;
+            font-family:var(--common-font);
+            font-size: 2.5vw;
+        }
+        .navright ul  a:hover{
+            text-decoration:underline;
+            color: aliceblue;
+            font-weight: bolder;
+            font-family: var(--common-font);
+          
+    
+        }
+    
+        .navright ul li{
+            margin-left: 40px;
+        }
+        .middle-page{
+          
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            
+        }
+        .middle-page .header
+        {  background-color:transparent;
+            width: 60%;
+           
+          text-align: center;
+          color: white;
+        
+        
+          font-family: var(--common-font);
+          display: flex;
+          flex-direction: column;
+           
+          
+        }
+        .middle-page .header h1{
+            font-size:4.5pc;
+            font-weight: bolder;
+            font-family: var(--common-font);
+          padding: 20px;
+            
+        }
+        .popmenu{
+           
+            background-color: aqua;
+            width: 100%;
+            height: 710px;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            background-color:var(--second-color);
+        } 
+        .popheader{
+            width: 100%;
+            height: 20%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .popheader h1{
+            font-size:2.5pc;
+            font-weight: bolder;
+            font-family:var(--common-font);
+          color: var(--main-color);
+    
+        }
+        .popcardsection{
+            width: 90%;
+            height: 50%;
+        display: flex;
+            flex-direction: row;
+           justify-content: space-around;
+            align-items: center;
+        }
+        .popcardsection .card {
+            width: 25vw;
+            height: 35vw;
+            border-radius: 10px;
+            background-color:white;
+            box-shadow: 10px 10px 70px 3px black;
+           
+        }
+        .popcardsection .card:hover{
+            transform: scale(1.1);
+    
+        }
+        .popcardsection .card .cardimgsec{
+            width: 100%;
+            height: 60%;
+            border-radius: 10px;
+        }
+        .popcardsection .card .cardtextsec{
+            width: 100%;
+            height: 60%;
+        }
+        .popcardsection .card .cardtextsec p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.3vw;
+        }
+        .popcardsection .card img{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+    
+        }
+        .popcardsection .card h1,p{
+            font-family: var(--common-font);
+            margin-top: 10px;
+            padding-left: 10px;
+            font-size: 2vw;
+        }
+        .pricecolor{
+            color: brown;
+        }
+      
+        .popbtnsection{
+            width: 100%;
+            height: 30%;
+           
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        button{
+            width: 200px;
+            background-color:var(--main-color);
+            border-radius:30px;
+            height: 50px;
+            color: white;
+        }
+        /*******************/
+      
+        .spcialsection{
+            width: 100%;
+            height: 1065px;
+    display: flex;
+    flex-direction: column;
+        }
+        .firstspsction{width: 100%;
+            height: 50%;
+            display: flex;
+    flex-direction: row;
+    
+        }
+        .secondspsction{width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+        }
+        .firstspsction .imgsec{
+            width: 50%;
+            height: 100%;
+            background-image: url(/images/pinkdish.png);
+        background-size:contain;
+        background-repeat: repeat;
+        background-position: center;
+        }
+     
+        .firstspsction  .textsec{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+            
+        }
+        .secondspsction .imgsec{
+            width: 50%;
+            height: 100%;
+            background-image: url(/images/orangedish.png);
+        background-size:contain;
+        background-repeat: repeat;
+        background-position: center;
+        }
+    
+        .secondspsction .textsec{
+           
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            
+            
+        }
+        .spcialsection h1{
+            font-size:3pc;
+            font-weight: bolder;
+            font-family:var(--common-font);
+          color: black;
+          width: 300px;
+          padding-left:20px;
+        }
+        .spcialsection p{
+           width: 80%;
+            font-weight: bolder;
+            font-family:var(--common-font);
+            color: black;
+            font-size: 16px;
+            padding-left:20px;
+            padding-bottom: 20px;
+        }
+        .spcialsection button
+    {
+        margin-left: 10px;
+    }
+    
+    
+    .stepsection{
+        width: 100%;
+        height: 497px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .stepsection .header{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .stepsection .header h1{
+        font-size: 3pc;
+        font-weight: bolder;
+        font-family:var(--common-font);
+        color: white;
+    }
+    .stepsection .cardsection{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .stepsection .cardsection .card{
+    
+        width: 400px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+    .stepsection .cardsection .card .number{
+        width: 80px;
+        height: 80px;
+        color: black;
+        border-radius: 100%;
+        display: flex;
+        background-color: white;
+    
+    
+        justify-content: center;
+        align-items: center;
+    }
+    .stepsection .cardsection .card .number h1{
+        font-size: 1.8pc;
+        color: var(--main-color);
+       
+    }
+        .stepsection .cardsection .card  h1{
+        font-size:2pc;
+        font-weight: bolder;
+        text-align: center;
+        font-family:var(--common-font);
+     color: white;
+    }
+    .stepsection .cardsection .card  p{
+        font-size:0.9pc;
+        font-weight: bolder;
+        font-family:var(--common-font);
+     color: white;
+     width: 80%;
+     text-align: center;
+    }
+    
+    .vegtablesection{
+        width: 100%;
+        height: 568px;
+        background-image: url(/images/vegibg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .vegtablesection h1{
+        font-weight: bolder;
+        font-family:var(--common-font);
+        font-size: 3.8pc;
+        color: var(--main-color);
+        margin-bottom: 20px;
+    }
+    .vegtablesection p{
+        font-weight: bolder;
+        font-family:var(--common-font);
+        font-size: 1pc;
+        color: var(--main-color);
+        width: 600px;text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .vegtablesection .textsection{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+      
+    .vegtablesection button{
+        width:320px;
+        height: 70px;
+        font-family:var(--common-font);
+        font-weight: bolder;
+    }
+    .lastsection{
+        width: 100%;
+        height: 710px;
+        background-color: var(--second-color);
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        flex-direction: column;
+    }
+    .lastsection .textsection{
+        width:60%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .lastsection .textsection h1{
+        font-size: 12pc;
+    height: 130px;
+    color: var(--main-color);
+    }
+    .lastsection .textsection  p{
+        font-size:1.8pc;
+        font-weight: bolder;
+        text-align: center;
+        font-family:var(--common-font);
+        color: var(--main-color);
+        margin-bottom: 50px;
+    }
+    .lastsection .textsection  h2{
+        font-size:1.8pc;
+        font-weight: bolder;
+        text-align: center;
+        font-family:var(--common-font);
+        color: var(--main-color);
+    }
+    .lastsection img {
+        width: 60px;
+        height: 60px;
+     
+        
+    }
+    .socialmedia{
+        margin-top: 40px;
+       
+     
+        width: 40%;
+        display: flex;
+       justify-content: center;
+    }
+    .socialmedia img{
+        margin-left: 20px;
+    }
+    .wavesection{
+    background-image:url(/images/waveup.svg);
+            background-position: center;
+            background-size: cover;
+            height: 40%;
+            width: 100%;
+    }
+    .footer{
+        width: 100%;
+        height: 355px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footersection{
+        width: 80% ;
+        
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutsec{
+        width: 50%;
+        height: 60%;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .aboutsec p{
+        font-family: var(--common-font);
+        color: white;
+        margin-left: 20px;
+    }
+    .aboutsec h1{
+        font-family: var(--common-font);
+        color: white;
+        margin-left: 30px;
+    }
+    .menusec{
+        width: 50%;
+        height: 60%;
+       
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .menusec .flist{
+        width: 36%;
+        height: 100%;
+        
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+       
+       
+    }
+    .menusec .flist a{
+        text-decoration: none;
+        font-family: var(--common-font);
+        color: white;
+        margin-right: 10px;
+        
+    
+    }
+    .menusec .flist h2{
+        text-decoration: none;
+        font-family: var(--common-font);
+        color: white;
+      
+    }
+    
+
+       
+
+    }
+    
+
+
+

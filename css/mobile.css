@@ -36,10 +36,12 @@
     }
     .navbar{
         width: 100%;
-        height: 20%;
+        height: 10%;
       display: flex;
-      z-index: 1;
-  
+    position: fixed;
+    background-color: var(--main-color);
+      z-index: 99;
+   
 
     }
     .navleft
@@ -50,31 +52,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+ 
     
     }
     .navleft img{
         width: 90%;
-        height: 60%;
+        height: 40%;
     }
        .navright
     {
         width:60%;
         height: 100%;
-        display: inline-grid;
-    justify-content: center;
+        display: flex;
+    justify-content: flex-end;
     align-content: center;
-    display: none;
+    
     
     }
     .navright ul{
         display: flex;
       
-       
+        display: none;
     }
     .navright ul  a{
         text-decoration: none;
         color: aliceblue;
         font-family:var(--common-font);
+        display: none;
     }
     .navright ul  a:hover{
         text-decoration:underline;
@@ -82,12 +86,121 @@
         font-weight: bolder;
         font-family: var(--common-font);
       
-
+        display: none;
+    }
+    .navlist{
+        display: none;
     }
 
     .navright ul li{
         margin-left: 40px;
+        display: none;
     }
+/*menu button****************/
+.menubtn{
+    width: 60%;
+    height: 100%;
+    border:1px solid red;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 50px;
+    height: 7px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-11px, 11px);
+    transform: rotate(-45deg) translate(-11px, 11px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-10px, -10px);
+    transform: rotate(45deg) translate(-10px, -10px);
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    height: 710px;
+    background-color: var(--second-color);
+    position: fixed;
+    right: -60%;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    top: 0%;
+    z-index: 999;
+}
+.changeslider {
+    width: 100%;
+    height: 710px;
+    background-color: var(--second-color);
+    position: fixed;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    right: 30%;
+    top: 0%;
+    z-index: 999;
+}
+
+.navlist1 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+.navcontain {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: 100%;
+}
+.navlist1 li {
+    text-decoration: none;
+    margin-top: 20px;
+}
+.navlist1 li img {
+    width: 30vw;
+    height: 42px;
+}
+.navlist1 a {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--main-color);
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
     .middle-page{
       
         width: 100%;
@@ -245,11 +358,12 @@ flex-direction: column;
     }
  
     .firstspsction  .textsec{
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
        
         
     }
@@ -264,12 +378,12 @@ flex-direction: column;
 
     .secondspsction .textsec{
        
-        width: 50%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         
         
     }
@@ -278,8 +392,10 @@ flex-direction: column;
         font-weight: bolder;
         font-family:var(--common-font);
       color: black;
-      width: 300px;
+      width: 80%;
       padding-left:20px;
+      text-align: center;
+   
     }
     .spcialsection p{
        width: 250px;
@@ -289,6 +405,7 @@ flex-direction: column;
         font-size: 16px;
         padding-left:20px;
         padding-bottom: 20px;
+        text-align: center;
     }
     .spcialsection button
 {
@@ -470,7 +587,10 @@ color: var(--main-color);
 
     width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.socialmedia img{
+    margin-left: 20px;
 }
 .wavesection{
 background-image:url(/images/waveup.svg);

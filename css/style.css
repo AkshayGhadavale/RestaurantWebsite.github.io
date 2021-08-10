@@ -39,6 +39,9 @@
       z-index: 1;
 
     }
+    .menubtn{
+        display: none;
+    }
     .navleft
     {
         width:40%;
@@ -138,7 +141,7 @@
 
     }
     .popcardsection{
-        width: 100%;
+        width: 80%;
         height: 50%;
     display: flex;
         flex-direction: row;
