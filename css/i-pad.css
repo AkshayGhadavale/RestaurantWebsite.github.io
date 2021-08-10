@@ -20,7 +20,9 @@
             display: none;
         }
         
-    
+        .slider{
+            display: none;
+        }
         .wrapper{
             width: 100%;
             height: 426px;

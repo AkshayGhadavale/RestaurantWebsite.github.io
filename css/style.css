@@ -25,7 +25,7 @@
     }
     .waveshape
     {
-        background-image:url(/images/wave.svg);
+        background-image:url("/images/wave.svg");
         background-position: center;
         background-size: cover;
         height: 284px;
@@ -40,6 +40,9 @@
 
     }
     .menubtn{
+        display: none;
+    }
+    .slider{
         display: none;
     }
     .navleft
@@ -228,7 +231,7 @@ flex-direction: row;
     .firstspsction .imgsec{
         width: 50%;
         height: 100%;
-        background-image: url(/images/pinkdish.png);
+        background-image: url("/images/pinkdish.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,7 +249,7 @@ flex-direction: row;
     .secondspsction .imgsec{
         width: 50%;
         height: 100%;
-        background-image: url(/images/orangedish.png);
+        background-image: url("/images/orangedish.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -360,7 +363,7 @@ flex-direction: row;
 .vegtablesection{
     width: 100%;
     height: 568px;
-    background-image: url(/images/vegibg.png);
+    background-image: url("/images/vegibg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -454,7 +457,7 @@ color: var(--main-color);
     justify-content: space-around;
 }
 .wavesection{
-background-image:url(/images/waveup.svg);
+background-image:url("/images/waveup.svg");
         background-position: center;
         background-size: cover;
         height: 40%;
