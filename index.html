@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/mobile.css">
 <link rel="stylesheet" href="css/i-pad.css">
+
 </head>
 
 <body>
@@ -54,19 +55,22 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
     </div>
 </div>
-
+ <img  class="bob second" src="./images/blob1.svg" alt=""> 
+<img  class="bob" src="./images/blob.svg" alt="">
 </div>
 <div class="waveshape">
        
     </div>
+    
+
     <div class="popmenu">
         <div class="popheader">
             <h1>Popular menu</h1>
         </div>
         <div class="popcardsection">
-            <div class="card"><div class="cardimgsec"><img src="./images/d3.png" alt="dish3"></div><div class="cardtextsec"><h1>Noodles</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div>
-            <div class="card"><div class="cardimgsec"><img src="./images/d1.png" alt="dish1"></div><div class="cardtextsec"><h1>Noodles</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div>
-            <div class="card"><div class="cardimgsec"><img src="./images/d2.png" alt="dish2"></div><div class="cardtextsec"><h1>Noodles</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div>
+        <a href="./menu.html"><div class="card" id="0" onclick="sendv(this.id)"><div class="cardimgsec"><img src="./images/d3.png" alt="dish3"></div><div class="cardtextsec"><h1>Chinise</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div></a> 
+        <a href="./menu.html"><div class="card" id="1" onclick="sendv(this.id)"><div class="cardimgsec"><img src="./images/d1.png" alt="dish1"></div><div class="cardtextsec"><h1>marathi</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div></a>
+            <div class="card" id="2" onclick="sendv()"><div class="cardimgsec"><img src="./images/d2.png" alt="dish2"></div><div class="cardtextsec"><h1>Noodles</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div>
         </div>
         <div class="popbtnsection">
         <button class="showmore">Show more</button>
@@ -74,6 +78,7 @@
 
         
     </div>
+
 
     <div class="spcialsection">
 <div class="firstspsction">
@@ -118,6 +123,7 @@
         </div>
     </div>
     </div>
+
 
 <div class="vegtablesection">
     <div class="textsection">
@@ -175,6 +181,12 @@
         x.classList.toggle("change");
         let slide = document.getElementById("slider1");
         slide.classList.toggle("changeslider");
+
+    }
+
+    function sendv(cid) {
+       
+        localStorage.setItem("number1", cid);
 
     }
 </script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/i-pad.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body onload="set()">
+    <div class="wrapper">
+    <div class="navbar">
+        <div class="navleft">
+            <img src="./images/logo.png" alt="">
+        </div>
+<div class="navright">
+    
+       
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+    
+   
+    <ul class="navlist">
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">Our Menu</a></li>
+        <li><a href="http://">Promo</a></li>
+        <li><a href="http://">Order</a></li>
+    </ul>
+</div>
+</div>
+<div class="slider" id="slider1">
+<div class="navcontain">
+    <ul class="navlist1">
+        <li><img src="images/logo.png"></li>
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">About</a></li>
+        <li><a href="http://">Service</a></li>
+        <li><a href="http://">Contact</a></li>
+       
+
+    </ul>
+</div> 
+</div>
+<div class="popmenu">
+    <div class="popheader">
+        <h1>Popular menu</h1>
+    </div>
+    <div class="popcardsection">
+        <div class="card"><div class="cardimgsec"><img src="./images/d3.png" alt="dish3"></div><div class="cardtextsec"><h1 id="name">Noodles</h1><p id="details"></p><h1 class="pricecolor" id="price">$15</h1></div></div>
+        <!-- <div class="card"><div class="cardimgsec"><img src="./images/d1.png" alt="dish1"></div><div class="cardtextsec"><h1 id="name1">Noodles</h1><p id="details1">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor"  id="price1">$15</h1></div></div>
+        <div class="card"><div class="cardimgsec"><img src="./images/d2.png" alt="dish2"></div><div class="cardtextsec"><h1>Noodles</h1><p>Lorem ipsum dolor sit amet, consectetur  adipisicing...</p><h1 class="pricecolor">$15</h1></div></div> -->
+    </div>
+    <div class="popbtnsection">
+    <button class="showmore">Show more</button>
+    </div>
+
+    
+</div>
+</div>
+</body>
+<script>
+function set(){
+    let det=[["fry rice","its rice the fry in oil","$60"],["soup","its vegitables soup with non-veg","$30"]];
+
+
+    let itemname = document.getElementById("name");
+    let details =document.getElementById("details");
+    let price =document.getElementById("price");
+    let itemname1 = document.getElementById("name1");
+    let details1 =document.getElementById("details1");
+    let price1 =document.getElementById("price1");
+
+   let value2 = localStorage.getItem("number1");
+ 
+
+     itemname.textContent=det[value2][0];
+     details.textContent=det[value2][1];
+     price.textContent=det[value2][2];
+
+
+    // itemname1.textContent=det[1][0];
+    // details1.textContent=det[1][1];
+    // price1.textContent=det[1][2];
+};
+
+</script>
+</html>
